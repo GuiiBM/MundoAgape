@@ -3,87 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Ágape · Formando Discípulos</title>
+    <meta name="description" content="Ministério infantil da Igreja Ágape. Lições, fotos, eventos e recursos do Mundo Ágape em um só lugar.">
+    <meta name="theme-color" content="#FFF8EC">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="apple-touch-icon" href="/assets/favicon.svg">
-    <title>Mundo Ágape</title>
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="apple-touch-icon" href="/assets/web/apple-touch-icon.png">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mundo Ágape">
     <meta property="og:url" content="https://mundoagape.netlify.app/">
     <meta property="og:title" content="Mundo Ágape - Formando Discípulos">
     <meta property="og:description" content="Um espaço de amor, alegria e aprendizado para as crianças. Aqui celebramos a fé, a comunidade e o crescimento espiritual.">
-    <meta property="og:image" content="assets/logo-mundo-agape.png">
+    <meta property="og:image" content="https://mundoagape.netlify.app/assets/web/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
+    <meta property="og:locale" content="pt_BR">
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mundoagape.netlify.app/">
-    <meta property="twitter:title" content="Mundo Ágape - Formando Discípulos">
-    <meta property="twitter:description" content="Um espaço de amor, alegria e aprendizado para as crianças.">
-    <meta property="twitter:image" content="assets/logo-mundo-agape.png">
-    
-    <!-- WhatsApp -->
-    <meta property="og:site_name" content="Mundo Ágape">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mundo Ágape - Formando Discípulos">
+    <meta name="twitter:description" content="Um espaço de amor, alegria e aprendizado para as crianças.">
+    <meta name="twitter:image" content="https://mundoagape.netlify.app/assets/web/og-image.jpg">
+
+    <script>document.documentElement.classList.add('js');</script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="assets/web/logo-mundo-agape.webp" type="image/webp">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-decoration">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
-        <div class="blob blob-5"></div>
-        <div class="blob blob-6"></div>
-        <div class="blob blob-7"></div>
-        <div class="blob blob-8"></div>
-        <div class="blob blob-9"></div>
-        <div class="blob blob-10"></div>
+    <!-- Tela de carregamento: as cinco crianças do logo, de mãos dadas -->
+    <div class="loader" id="loader" role="status" aria-live="polite">
+        <div class="loader-inner">
+            <svg class="loader-globe" viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="52" class="globe-ring"/>
+                <g class="globe-lines">
+                    <ellipse cx="60" cy="60" rx="22" ry="52"/>
+                    <ellipse cx="60" cy="60" rx="42" ry="52"/>
+                    <line x1="60" y1="8" x2="60" y2="112"/>
+                </g>
+                <path class="globe-lat" d="M12 44h96M8 60h104M12 76h96"/>
+                <path class="globe-heart" d="M60 72c-9-6-15-11-15-18a7 7 0 0 1 15-3 7 7 0 0 1 15 3c0 7-6 12-15 18z"/>
+            </svg>
+
+            <div class="loader-kids" aria-hidden="true">
+                <svg class="loader-hands" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M10 10 Q 40 2 70 10 T 130 10 T 190 10 T 250 10 T 290 10"/></svg>
+                <span class="kid">Á</span>
+                <span class="kid">G</span>
+                <span class="kid">A</span>
+                <span class="kid">P</span>
+                <span class="kid">E</span>
+            </div>
+
+            <p class="loader-text">Mundo Ágape</p>
+            <p class="loader-sub">preparando tudo com carinho<span class="dots"><i>.</i><i>.</i><i>.</i></span></p>
+            <span class="sr-only">Carregando o site</span>
+        </div>
     </div>
 
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="logo-section">
-                <img src="assets/logo-left.png" alt="Logo 1" class="logo-image">
-                <img src="assets/logo-right.png" alt="Logo 2" class="logo-image">
-            </div>
+    <a class="skip-link" href="#conteudo">Pular para os conteúdos</a>
+
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a href="#topo" class="brand" aria-label="Igreja Ágape — voltar ao topo">
+                <picture>
+                    <source srcset="assets/web/logo-left.webp" type="image/webp">
+                    <img src="assets/web/logo-left.png" alt="Igreja Ágape" width="640" height="200" class="brand-logo">
+                </picture>
+            </a>
+            <a href="#contato" class="btn btn-small">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9l-4 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg>
+                Fale com a gente
+            </a>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Bem-vindo ao <span class="highlight">Mundo Ágape</span></h1>
-            <p class="hero-subtitle">Acesse todos os nossos conteúdos, eventos e recursos em um único lugar</p>
+    <section class="hero" id="topo">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow reveal">Ministério infantil da Igreja Ágape</p>
+                <h1 class="hero-title reveal">
+                    Bem-vindo ao
+                    <span class="hero-mark">Mundo Ágape
+                        <svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16 C 60 6, 110 22, 160 12 S 250 6, 296 14"/></svg>
+                    </span>
+                </h1>
+                <p class="hero-subtitle reveal">Acesse todos os nossos conteúdos, eventos e recursos em um único lugar.</p>
+
+                <nav class="quick-nav reveal" aria-label="Seções do site">
+                    <span class="quick-nav-label">Ir direto para</span>
+                    <ul id="quick-nav-list"></ul>
+                </nav>
+            </div>
+
+            <div class="hero-art reveal" aria-hidden="true">
+                <svg class="orbit" viewBox="0 0 400 400"><circle cx="200" cy="200" r="190"/></svg>
+                <picture>
+                    <source srcset="assets/web/logo-mundo-agape.webp" type="image/webp">
+                    <img src="assets/web/logo-mundo-agape.png" alt="" width="720" height="712" class="hero-logo">
+                </picture>
+                <svg class="doodle doodle-star" viewBox="0 0 40 40"><path d="M20 3l4.6 11.2L37 15l-9.5 7.8L30.4 35 20 28.6 9.6 35l2.9-12.2L3 15l12.4-.8z"/></svg>
+                <svg class="doodle doodle-heart" viewBox="0 0 40 40"><path d="M20 35C8 27 3 20 3 13a8.5 8.5 0 0 1 17-2 8.5 8.5 0 0 1 17 2c0 7-5 14-17 22z"/></svg>
+                <svg class="doodle doodle-sun" viewBox="0 0 60 60"><circle cx="30" cy="30" r="11"/><path d="M30 4v8M30 48v8M4 30h8M48 30h8M11.6 11.6l5.7 5.7M42.7 42.7l5.7 5.7M11.6 48.4l5.7-5.7M42.7 17.3l5.7-5.7"/></svg>
+                <svg class="doodle doodle-squiggle" viewBox="0 0 80 24"><path d="M3 12c8-10 14 10 22 0s14 10 22 0 14 10 22 0"/></svg>
+                <p class="hero-note">feito com amor<br>para os pequenos</p>
+            </div>
         </div>
     </section>
 
-    <main id="main-content" class="main-content"></main>
+    <main id="conteudo" class="content" tabindex="-1"></main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Mundo Ágape</h3>
+    <footer class="footer" id="contato">
+        <svg class="footer-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 180 90, 360 0, 540 30 S 900 80, 1080 34 S 1340 10, 1440 44 V80 H0 Z"/></svg>
+        <div class="footer-inner">
+            <div class="footer-about reveal">
+                <p class="footer-kicker">Mundo Ágape</p>
+                <h2 class="footer-title">Formando discípulos desde pequenininhos</h2>
                 <p>Um espaço de amor, alegria e aprendizado para as crianças. Aqui celebramos a fé, a comunidade e o crescimento espiritual através de atividades, eventos e recursos especialmente preparados com carinho.</p>
             </div>
-            <div class="footer-section">
-                <h3>Entre em Contato</h3>
-                <p class="contact-item">
-                    <a href="mailto:ministeriomundoagape@gmail.com" class="contact-label">📧 Email: ministeriomundoagape@gmail.com</a>
-                </p>
-                <p class="contact-item">
-                    <a href="https://wa.me/5512991486134" target="_blank" class="contact-label">📱 WhatsApp Ileana: +55 12 99148-6134</a>
-                </p>
-                <p class="contact-item">
-                    <a href="https://wa.me/5512996784373" target="_blank" class="contact-label">📱 WhatsApp Marcos: +55 12 99678-4373</a>
-                </p>
+
+            <div class="footer-contact reveal">
+                <h3>Entre em contato</h3>
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:ministeriomundoagape@gmail.com" class="contact-card">
+                            <span class="contact-icon contact-icon-mail">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-name">E-mail</span>
+                                <span class="contact-value">ministeriomundoagape@gmail.com</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5512991486134" target="_blank" rel="noopener" class="contact-card">
+                            <span class="contact-icon contact-icon-wa">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.8z"/><path d="M9.2 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5a6 6 0 0 0 2.6 2.3c.2.1.4.1.5 0l.7-.8c.2-.2.3-.2.6-.1l1.5.7c.2.1.4.2.4.4 0 .6-.2 1.3-.9 1.7-.6.3-1.6.5-3.4-.3a9.5 9.5 0 0 1-3.8-3.6c-.7-1.2-.6-2.3-.1-3.5z" class="fill"/></svg>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-name">WhatsApp · Ileana</span>
+                                <span class="contact-value">+55 12 99148-6134</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5512996784373" target="_blank" rel="noopener" class="contact-card">
+                            <span class="contact-icon contact-icon-wa">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.8z"/><path d="M9.2 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5a6 6 0 0 0 2.6 2.3c.2.1.4.1.5 0l.7-.8c.2-.2.3-.2.6-.1l1.5.7c.2.1.4.2.4.4 0 .6-.2 1.3-.9 1.7-.6.3-1.6.5-3.4-.3a9.5 9.5 0 0 1-3.8-3.6c-.7-1.2-.6-2.3-.1-3.5z" class="fill"/></svg>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-name">WhatsApp · Marcos</span>
+                                <span class="contact-value">+55 12 99678-4373</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2026 Mundo Ágape - Todos os direitos reservados a <a href="https://gbm-mkt.netlify.app" target="_blank" class="footer-credit">GBM MKT</a></p>
+            <p>&copy; <span id="year">2026</span> Mundo Ágape · Todos os direitos reservados a <a href="https://gbm-mkt.netlify.app" target="_blank" rel="noopener" class="footer-credit">GBM MKT</a></p>
+            <a href="#topo" class="back-top">voltar ao topo ↑</a>
         </div>
     </footer>
 
