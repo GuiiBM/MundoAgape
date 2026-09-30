@@ -4,10 +4,10 @@ const sections = [
         links: [
             { emoji: "❗", title: "Combinados", url: "https://docs.google.com/document/d/1QUMb_qazXzzdzLQ-GfHXTsisCZPmRIMC/edit?usp=sharing&ouid=109160514043201243775&rtpof=true&sd=true" },
             { emoji: "📸", title: "Fotos", url: "https://x.gd/vqbOP" },
-            { emoji: "✍", title: "Lições", url: "https://x.gd/4FjqJ" },
+            { emoji: "✍️", title: "Lições", url: "https://x.gd/4FjqJ" },
             { emoji: "🥳", title: "Eventos", url: "https://x.gd/TKEL8" },
             { emoji: "🎞️", title: "Projeções", url: "https://x.gd/mPSks" },
-            { emoji: "❤🔥", title: "Os 5Cs", url: "https://docs.google.com/document/d/1QSbNFU4a_X6i92aLFw_cpVDN1_ykGi01/edit?usp=sharing&ouid=109160514043201243775&rtpof=true&sd=true" }
+            { emoji: "❤️‍🔥", title: "Os 5Cs", url: "https://docs.google.com/document/d/1QSbNFU4a_X6i92aLFw_cpVDN1_ykGi01/edit?usp=sharing&ouid=109160514043201243775&rtpof=true&sd=true" }
         ]
     },
     {
@@ -23,7 +23,7 @@ const sections = [
     {
         title: "🎉 Eventos",
         links: [
-            { emoji: "👨👩👧👦", title: "Family Day 2024", url: "https://drive.google.com/drive/folders/17pnTR4iYoYIZRaCkD0QtSZcvhQLoqvWT" },
+            { emoji: "👨‍👩‍👧‍👦", title: "Family Day 2024", url: "https://drive.google.com/drive/folders/17pnTR4iYoYIZRaCkD0QtSZcvhQLoqvWT" },
             { emoji: "🎓", title: "Imersão Kids 2024", url: "https://drive.google.com/drive/folders/1ffSMxXDvslm9b95LiFfY6Ht3e_ldEppk?usp=drive_link" },
             { emoji: "🎓", title: "Imersão Kids 2025", url: "https://drive.google.com/drive/folders/1bc4CiifShuAfqbE_vE_b9VOquZ7pTArX?usp=sharing" }
         ]

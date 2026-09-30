@@ -1,16 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <style>
-      @media (prefers-color-scheme: dark) {
-        .bg { fill: #047ab8; }
-        .text { fill: #ffffff; }
-      }
-      @media (prefers-color-scheme: light) {
-        .bg { fill: #047ab8; }
-        .text { fill: #ffffff; }
-      }
-    </style>
-  </defs>
-  <rect class="bg" width="100" height="100" rx="20"/>
-  <text x="50" y="70" font-size="60" font-weight="bold" text-anchor="middle" class="text" font-family="Arial, sans-serif">✨</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#FFF8EC"/>
+  <circle cx="32" cy="32" r="23" fill="#DCEDF8" stroke="#1180C0" stroke-width="4"/>
+  <g fill="none" stroke="#1180C0" stroke-width="2.5" opacity=".55">
+    <ellipse cx="32" cy="32" rx="10" ry="23"/>
+    <path d="M9.5 25h45M9.5 39h45"/>
+  </g>
+  <path d="M32 44c-6-4-10-7.5-10-12a5 5 0 0 1 10-2 5 5 0 0 1 10 2c0 4.5-4 8-10 12z" fill="#F2735A" stroke="#1B375B" stroke-width="2" stroke-linejoin="round"/>
 </svg>
